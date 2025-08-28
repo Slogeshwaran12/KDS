@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/item_background_yellow"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#2E2E2E" />
+
+    <TextView
+        android:id="@+id/tvFoodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delicious food description here."
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvFoodPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$12.99"
+            android:textSize="16sp"
+            android:textColor="#E53935"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:textColor="#1E88E5" />
+
+    </LinearLayout>
+</LinearLayout>
